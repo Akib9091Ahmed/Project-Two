@@ -51,37 +51,38 @@ const Login = () => {
     return (
         <div>
             <h1 className="text-center text-5xl font-bold p-4">Sign in</h1>
-            <div className="hero ">
+            <div className="hero m-3 ">
                 <div className="hero-content">
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         {/* login form */}
-                        <form onSubmit={handleLogin} className="card-body">
+                        <form onSubmit={handleLogin} style={{ width: '550px', height: '500px' }} className="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Email</span>
+                                    <span className="label-text ml-3">Email</span>
                                 </label>
-                                <input name='email' type="text" placeholder="email" className="input input-bordered" required />
+                                <input name='email' type="text" placeholder="email" className="input input-bordered m-3" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Password</span>
+                                    <span className="label-text ml-3">Password</span>
                                 </label>
-                                <input name='password' type="text" placeholder="password" className="input input-bordered" required />
-                                <label className="label">
+                                <input name='password' type="password" placeholder="password" className="input input-bordered m-3" required />
+                                <label className="label ml-3">
                                     <a href="/" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
                             </div>
 
-                            <div className="form-control mt-6">
-                                <input className="btn btn-primary" type="submit" value="Login" />
+                            <div className="form-control mt-4">
+                                <input className="btn btn-primary m-3 " type="submit" value="Login" />
                                 <div className="divider">OR</div>
 
                                 <button className="m-3 rounded btn btn-outline btn-primary" onClick={handleGoogleSignIn}><FaGoogle></FaGoogle> Sign in with Google</button>
                             </div>
                             <p className='text-danger'>{error}</p>
+                            <p className='m-4 text-center'>New to hare Please <Link to='/register' className='text-primary font-bold'>Register</Link></p>
+
                         </form>
 
-                        <p className='m-4 text-center'>New to hare Please <Link to='/register' className='text-primary font-bold'>Register</Link></p>
 
                     </div>
                 </div>

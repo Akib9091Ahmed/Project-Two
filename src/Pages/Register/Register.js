@@ -37,32 +37,33 @@ const Register = () => {
                 <div className="hero-content">
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         {/* register form */}
-                        <form onSubmit={handleRegister} className="card-body">
+                        <form onSubmit={handleRegister} style={{ width: '600px', height: '500px' }} className="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
                             <div className="form-control">
-                                <label className="label">
+                                <label className="label ml-3">
                                     <span className="label-text">Name</span>
                                 </label>
-                                <input name='name' type="text" placeholder="name" className="input input-bordered" required />
+                                <input name='name' type="text" placeholder="name" className="input input-bordered m-3" required />
                             </div>
 
                             <div className="form-control">
-                                <label className="label">
+                                <label className="label ml-3">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input name='email' type="email" placeholder="email" className="input input-bordered" required />
+                                <input name='email' type="email" placeholder="email" className="input input-bordered m-3" required />
                             </div>
                             <div className="form-control">
-                                <label className="label">
+                                <label className="label ml-3">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input name='password' type="password" placeholder="password" className="input input-bordered" required />
+                                <input name='password' type="password" placeholder="password" className="input input-bordered m-3" required />
                             </div>
                             <div className="form-control mt-6">
-                                <input className="btn btn-primary" type="submit" value="Register" />
+                                <input className="btn btn-primary m-3" type="submit" value="Register" />
                             </div>
                             <p className='text-danger'>{error}</p>
+                            <p className='m-4 text-center'>If you have an account <Link to='/login' className='text-primary font-bold'>Login</Link></p>
                         </form>
-                        <p className='m-4 text-center'>If you have an account <Link to='/login' className='text-primary font-bold'>Login</Link></p>
+
 
                     </div>
                 </div>
