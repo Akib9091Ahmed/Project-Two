@@ -21,7 +21,7 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
-                navigate('/')
+                navigate('/blog')
             })
             .catch(error => console.error(error))
     }
@@ -38,7 +38,8 @@ const Login = () => {
                 console.log(user)
                 form.reset();
                 setError('');
-                navigate(from, { replace: true });
+                // navigate(from, { replace: true });
+                navigate('/blog')
             })
             .catch(error => {
                 console.error(error)
@@ -49,7 +50,7 @@ const Login = () => {
 
     return (
         <div>
-            <h1 className="text-center text-5xl font-bold p-4">Login now..!</h1>
+            <h1 className="text-center text-5xl font-bold p-4">Sign in</h1>
             <div className="hero ">
                 <div className="hero-content">
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">

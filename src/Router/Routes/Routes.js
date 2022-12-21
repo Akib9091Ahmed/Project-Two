@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main";
-import Blog from "../../Pages/Blog";
-import Home from "../../Pages/Home/Home";
+import About from "../../Pages/About";
 import Login from "../../Pages/Login/Login";
 import Register from "../../Pages/Register/Register";
 
@@ -14,7 +13,7 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Login></Login>,
-                loader: () => fetch('https://service-review-server-armanaru07.vercel.app/services')
+                
             },
             {
                 path: '/login',
@@ -26,7 +25,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/blog',
-                element: <Blog></Blog>
+                element: <About></About>
             }
         ]
     },

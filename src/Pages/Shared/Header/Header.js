@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <div className="navbar h-16 mb-2 bg-base-100">
             <div className="flex-1">
-                <Link to={"/"} className="btn btn-ghost normal-case text-xl">MR JOY </Link>
+                <Link to={"/"} className="btn btn-ghost normal-case text-xl">Akib </Link>
             </div>
             <div className="flex-1 font-semibold">
                 {/* <Link to={"/"} className="mr-5">Home</Link>

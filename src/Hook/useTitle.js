@@ -4,7 +4,7 @@ const useTitle = (title) => {
 
     useEffect(() => {
 
-        document.title = `MR JOY-${title}`
+        document.title = `${title}`
 
     }, [title])
 }
